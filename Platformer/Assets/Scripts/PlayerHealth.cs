@@ -20,4 +20,8 @@ public static class PlayerHealth
         _health = health;
         healthChanged?.Invoke(_health);
     }
+    public static void ResetHealth()
+    {
+        _health = 6;
+    }
 }

@@ -30,4 +30,8 @@ public class PlayerWarp : MonoBehaviour
             }
         }
     }
+    public void reset_UG()
+    {
+        in_UG = false;
+    }
 }

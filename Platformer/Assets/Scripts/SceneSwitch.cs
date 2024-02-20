@@ -21,6 +21,10 @@ public class SceneSwitch : MonoBehaviour
         {
             SceneManager.LoadScene("Controls");
         }
+        else if (Input.GetKeyDown(KeyCode.T) && CurrentScene == "Main_Menu")
+        {
+            SceneManager.LoadScene("Tutorial_dev_cell");
+        }
         else if (Input.GetKeyDown(KeyCode.F1) && CurrentScene == "Main_Menu")
         {
             SceneManager.LoadScene("Level_1");

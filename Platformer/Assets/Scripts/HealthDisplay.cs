@@ -21,6 +21,7 @@ public class HealthDisplay : MonoBehaviour
         if (obj < 0)
         {
             //death screen
+            PlayerHealth.ResetHealth();
             SceneManager.LoadScene("Death_Scene");
         }
         else
