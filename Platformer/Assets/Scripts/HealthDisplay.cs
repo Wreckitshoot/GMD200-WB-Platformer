@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HealthDisplay : MonoBehaviour
@@ -20,6 +21,7 @@ public class HealthDisplay : MonoBehaviour
         if (obj < 0)
         {
             //death screen
+            SceneManager.LoadScene("Death_Scene");
         }
         else
         {
