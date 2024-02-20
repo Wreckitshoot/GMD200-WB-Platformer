@@ -6,7 +6,8 @@ using UnityEngine;
 public class PlayerAnimation : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D _rb;
-
+    [SerializeField] private Animator animator;
+    [SerializeField] private Playermovement playermovement;
     private bool _facingRight = true;
     private void Awake()
     {
@@ -26,6 +27,7 @@ public class PlayerAnimation : MonoBehaviour
         {
             Flip();
         }
+        animator.SetFloat("MoveSpeedX", Mathf.Abs(_rb.velocity.x) / playermovement.XSpeed);
     }
     private void Flip()
     {
